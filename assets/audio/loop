@@ -1,0 +1,23 @@
+                        rhc_media - Mario no Gourmetrace
+                         Copyright (C) 2020  devwizard
+          This project is licensed under the terms of the GNU General
+          Public License version 2.  See LICENSE for more information.
+
+0B  00  loop0       0       edb2    ffffffff
+0B  01  loop1       0       3b0bf   ffffffff
+0B  02  drumroll    0       27117   0
+
+0C  00  title_l     26ef3   d82c0   ffffffff
+0C  01  title_r     26ef3   d82c0   ffffffff
+
+0E  00  win_l       3e75f   8ec6b   ffffffff
+0E  01  win_r       3e75f   8ec6b   ffffffff
+
+0F  00  lose_l      0       464ff   0
+0F  01  lose_r      0       464ff   0
+
+10  00  course1_l   118b1   20793d  ffffffff
+10  01  course1_r   118b1   20793d  ffffffff
+
+11  00  course2_l   5e3ba   11805a  ffffffff
+11  01  course2_r   5e3ba   11805a  ffffffff

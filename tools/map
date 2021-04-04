@@ -1,0 +1,28 @@
+#!/usr/bin/env python3
+
+#                       rhc_media - Mario no Gourmetrace
+#                        Copyright (C) 2020  devwizard
+#         This project is licensed under the terms of the GNU General
+#         Public License version 2.  See LICENSE for more information.
+
+import sys
+
+def main(argc, argv):
+    if argc != 3:
+        print("usage: %s <output> <input>" % argv[0])
+        return 1
+    with open(argv[2], "r") as f:
+        data = f.read()
+    lines = data.split("\n")
+    data = ""
+    for line in lines:
+        if " " not in line:
+            continue
+        addr, t, name = line.split()
+        data += ".definelabel %s, %s0x%s\n" % (name, " "*(49-len(name)), addr)
+    with open(argv[1], "w") as f:
+        f.write(data)
+    return 0
+
+if __name__ == "__main__":
+    sys.exit(main(len(sys.argv), sys.argv))
